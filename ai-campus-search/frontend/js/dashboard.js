@@ -1,4 +1,5 @@
-const API_URL = "http://localhost:5000/api";
+// API Configuration is loaded from config.js
+// const API_URL is set globally by config.js
 
 // Dashboard functionality
 document.addEventListener('DOMContentLoaded', async function() {

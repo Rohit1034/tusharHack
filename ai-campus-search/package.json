@@ -1,0 +1,14 @@
+{
+  "name": "ai-campus-search",
+  "version": "1.0.0",
+  "description": "AI Campus Search - Full Stack Application",
+  "private": true,
+  "scripts": {
+    "install-backend": "cd backend && npm install",
+    "start": "cd backend && node server.js",
+    "dev": "cd backend && npm run dev"
+  },
+  "engines": {
+    "node": "22.22.0"
+  }
+}
