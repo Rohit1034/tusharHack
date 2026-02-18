@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard - SmartCampus AI</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SmartCampus AI</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#dashboard" class="nav-link">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#upload" class="nav-link">Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#profile" class="nav-link">Profile</a>
+                    </li>
+                    <li class="nav-item">
+                        <span id="welcomeText" class="welcome-text">Welcome, User</span>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn-gradient" id="logoutBtn" onclick="handleLogout()">Logout</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Main Content -->
+    <div class="dashboard-container">
+        <div class="gradient-bg"></div>
+        
+        <!-- Dashboard Hero Section -->
+        <section id="dashboard" class="hero-section dashboard-hero">
+            <div class="hero-container">
+                <div class="hero-content glass-card">
+                    <h1 class="hero-title fade-in">AI Campus Search Dashboard</h1>
+                    <p class="hero-subtitle fade-in">Search, Upload, and Explore Smart Campus Knowledge</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Search Section -->
+        <section class="dashboard-section">
+            <div class="section-container">
+                <div class="search-card glass-card">
+                    <h2>Knowledge Search</h2>
+                    <div class="search-container">
+                        <div class="search-input-container">
+                            <input type="text" id="searchInput" placeholder="Ask anything about your documents...">
+                            <button class="search-btn" id="searchBtn">
+                                <i class="fas fa-search"></i>
+                                <span>Search</span>
+                            </button>
+                        </div>
+                        <div class="search-loading" id="searchLoading" style="display: none;">
+                            <div class="spinner"></div>
+                            <p>Searching...</p>
+                        </div>
+                    </div>
+                    
+                    <!-- Search Results -->
+                    <div class="results-container">
+                        <h3>Search Results</h3>
+                        <div class="search-results-grid" id="searchResults">
+                            <p>Enter a query to search your documents...</p>
+                        </div>
+                        
+                        <h3>AI Summary</h3>
+                        <div class="ai-summary-container glass-card" id="aiSummary">
+                            <p>AI-generated summary will appear here...</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Upload Section -->
+        <section id="upload" class="dashboard-section">
+            <div class="section-container">
+                <div class="upload-card glass-card">
+                    <h2>Upload Documents</h2>
+                    <div class="upload-container">
+                        <div class="upload-area" id="uploadArea">
+                            <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                            <h3>Drag & Drop Files</h3>
+                            <p>or click to browse</p>
+                            <p class="file-types">Supports: PDF, DOCX, TXT</p>
+                        </div>
+                        <input type="file" id="fileInput" accept=".pdf,.docx,.txt" multiple hidden>
+                        
+                        <div class="upload-controls">
+                            <select id="departmentSelect" class="department-select">
+                                <option value="">Select Department</option>
+                                <option value="Computer Science">Computer Science</option>
+                                <option value="Mathematics">Mathematics</option>
+                                <option value="Physics">Physics</option>
+                                <option value="Chemistry">Chemistry</option>
+                                <option value="Biology">Biology</option>
+                                <option value="Engineering">Engineering</option>
+                                <option value="Business">Business</option>
+                            </select>
+                            
+                            <button class="btn-primary" id="uploadBtn">
+                                <i class="fas fa-upload"></i>
+                                <span>Upload Documents</span>
+                            </button>
+                        </div>
+                        
+                        <div class="upload-progress" id="uploadProgress" style="display: none;">
+                            <div class="progress-bar">
+                                <div class="progress-fill" id="progressFill"></div>
+                            </div>
+                            <p id="progressText">Uploading...</p>
+                        </div>
+                        
+                        <div class="upload-status" id="uploadStatus"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recommendations Section -->
+        <section class="dashboard-section">
+            <div class="section-container">
+                <div class="recommendations-card glass-card">
+                    <h2>Recommended Documents</h2>
+                    <div class="recommendations-grid" id="recommendations">
+                        <p>Loading recommendations...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Recent Searches Section -->
+        <section class="dashboard-section">
+            <div class="section-container">
+                <div class="recent-searches-card glass-card">
+                    <h2>Recent Searches</h2>
+                    <div class="recent-searches-container" id="recentSearches">
+                        <p>No recent searches yet...</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="js/auth.js"></script>
+    <script src="js/dashboard.js"></script>
+</body>
+</html>

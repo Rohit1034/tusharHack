@@ -1,0 +1,16 @@
+# 1-Minute Pitch Script: AI Campus Search
+
+## Opening Hook (10 seconds)
+"What if finding the right academic resource took seconds instead of hours? Our AI Campus Search transforms how students and faculty discover knowledge across campus systems."
+
+## Problem Statement (15 seconds)
+"Traditional search methods struggle with academic content. Students waste hours sifting through unorganized resources, while faculty spend valuable time locating relevant research materials. Existing systems can't understand the semantic meaning behind natural language queries."
+
+## Solution (20 seconds)
+"We've built a unified semantic search platform that uses OpenAI embeddings to understand the true meaning of queries. Our system processes documents in PDF, DOCX, and TXT formats, creates semantic indexes, and delivers relevant results with AI-generated summaries. Faculty and students can find exactly what they need using natural language."
+
+## Technical Innovation (10 seconds)
+"Built with Node.js, MongoDB, and OpenAI API, our system calculates cosine similarity between query and document embeddings in real-time. The neon-themed UI provides an engaging user experience with role-based access and personalized recommendations."
+
+## Impact (5 seconds)
+"Transforming campus knowledge discovery from hours to seconds, making academic research more efficient and accessible for everyone."

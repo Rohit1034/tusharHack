@@ -1,0 +1,60 @@
+# AI Campus Search Demo Script
+
+## Introduction (30 seconds)
+"Today I'm excited to demonstrate our AI Campus Search - a unified semantic knowledge search and recommendation system designed for smart campuses. This full-stack application combines cutting-edge AI technologies with an intuitive user interface to revolutionize how students and faculty discover and access campus resources."
+
+## Authentication Demo (1 minute)
+1. Navigate to the homepage
+2. Click "Get Started" to go to the login page
+3. If new user, register with details:
+   - Name: John Doe
+   - Email: john@example.com
+   - Password: securepassword
+   - Role: Student
+   - Department: Computer Science
+   - Interests: AI, Machine Learning, Data Science
+4. Login with the created account
+5. Notice the JWT token handling and role-based redirection
+
+## File Upload Demo (1 minute)
+1. On the dashboard, click "Choose File" button
+2. Select a sample PDF, DOCX, or TXT file
+3. Select the appropriate department
+4. Click "Upload"
+5. Explain how the system processes the file:
+   - Extracts text content
+   - Chunks into 500-word segments
+   - Generates OpenAI embeddings
+   - Stores in MongoDB for semantic search
+
+## Semantic Search Demo (2 minutes)
+1. Enter a search query in the search bar (e.g., "machine learning algorithms")
+2. Click search and observe the results
+3. Explain the process:
+   - Query converted to embedding
+   - Cosine similarity calculated with stored embeddings
+   - Top 5 results displayed
+   - AI summary generated from top 3 results
+4. Show the AI-generated summary highlighting key insights
+5. Demonstrate the relevance scores for each result
+
+## Recommendations Demo (30 seconds)
+1. Observe the "Recommended Documents" section
+2. Explain how the system filters by department and matches user interests
+3. Show how previous searches influence recommendations
+
+## Admin Dashboard Demo (1 minute)
+1. If logged in as admin, navigate to admin.html
+2. Show system statistics (total users, documents, searches)
+3. Display the documents table with titles, departments, and upload dates
+4. Demonstrate document deletion functionality
+5. Explain the role-based access control
+
+## Bonus Features Demo (30 seconds)
+1. Point out the neon-themed UI with glassmorphism effects
+2. Mention responsive design compatibility
+3. Highlight trending topics and smart tagging features
+4. Demonstrate dark/light mode toggle if implemented
+
+## Conclusion (30 seconds)
+"This AI Campus Search system demonstrates how semantic search and AI can transform knowledge discovery on campuses. By combining advanced NLP techniques with intuitive design, we've created a powerful tool that understands natural language queries and delivers relevant results. The system scales with your knowledge base and learns from user interactions to improve recommendations over time."

@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SmartCampus AI - AI-Powered Knowledge Engine</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <h2>SmartCampus AI</h2>
+            </div>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item">
+                        <a href="#home" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#features" class="nav-link">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#how-it-works" class="nav-link">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#upload" class="nav-link">Upload</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#search" class="nav-link">Search</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#about" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#contact" class="nav-link">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn-gradient" onclick="navigateToLogin()">Get Started</button>
+                    </li>
+                </ul>
+            </div>
+            <div class="nav-toggle" id="nav-toggle">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Scroll Progress Bar -->
+    <div class="scroll-progress" id="scroll-progress"></div>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero-section">
+        <div class="gradient-bg"></div>
+        <div class="hero-container">
+            <div class="hero-content glass-card">
+                <h1 class="hero-title">AI-Powered Smart Campus Knowledge Engine</h1>
+                <p class="hero-subtitle">Transform your campus research experience with semantic search, intelligent document processing, and AI-powered insights across all academic resources.</p>
+                <div class="hero-buttons">
+                    <button class="btn-primary" onclick="navigateToLogin()">Get Started</button>
+                    <button class="btn-secondary" onclick="document.getElementById('features').scrollIntoView({behavior: 'smooth'})">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section id="features" class="features-section">
+        <div class="section-container">
+            <h2 class="section-title">Powerful Features</h2>
+            <p class="section-subtitle">Discover what makes our platform the ultimate solution for campus knowledge management</p>
+            <div class="features-grid">
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>🔍 Semantic Search</h3>
+                    <p>Find information using natural language queries with intelligent context understanding</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-file-upload"></i>
+                    </div>
+                    <h3>📄 Multi-format Upload</h3>
+                    <p>Upload PDF, DOCX, PPT, TXT and other academic documents seamlessly</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>🤖 AI Summarization</h3>
+                    <p>Get concise, intelligent summaries of complex academic content</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>🧠 Vector Embeddings</h3>
+                    <p>Advanced AI processing creates semantic understanding of your documents</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-bolt"></i>
+                    </div>
+                    <h3>⚡ Fast Retrieval</h3>
+                    <p>Lightning-fast search results with relevance scoring and ranking</p>
+                </div>
+                <div class="feature-card glass-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-shield-alt"></i>
+                    </div>
+                    <h3>🔐 Secure Campus Data</h3>
+                    <p>Enterprise-grade security with role-based access control</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- How It Works Section -->
+    <section id="how-it-works" class="how-it-works-section">
+        <div class="section-container">
+            <h2 class="section-title">How It Works</h2>
+            <p class="section-subtitle">Simple process, powerful results</p>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <div class="timeline-number">1</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Upload Documents</h3>
+                        <p>Upload your academic documents in various formats</p>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-number">2</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Text Extraction</h3>
+                        <p>Advanced AI extracts and processes text content</p>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-number">3</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Generate Embeddings</h3>
+                        <p>Create semantic vector representations of your content</p>
+                    </div>
+                </div>
+                <div class="timeline-connector"></div>
+                <div class="timeline-item">
+                    <div class="timeline-number">4</div>
+                    <div class="timeline-content glass-card">
+                        <h3>Semantic Search + AI Summary</h3>
+                        <p>Find relevant information and get intelligent summaries</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Document Upload Section -->
+    <section id="upload" class="upload-section">
+        <div class="section-container">
+            <h2 class="section-title">Document Upload</h2>
+            <p class="section-subtitle">Upload your academic documents to build your knowledge base</p>
+            <div class="upload-container glass-card">
+                <div class="upload-area" id="upload-area">
+                    <i class="fas fa-cloud-upload-alt upload-icon"></i>
+                    <h3>Drag & Drop Files</h3>
+                    <p>or click to browse</p>
+                    <p class="file-types">Supports: PDF, DOCX, PPT, TXT</p>
+                </div>
+                <input type="file" id="file-input" accept=".pdf,.docx,.ppt,.pptx,.txt" multiple hidden>
+                <div class="upload-info" id="upload-info">
+                    <p>No files selected</p>
+                </div>
+                <button class="btn-primary" id="upload-btn">Upload Documents</button>
+                <div class="upload-status" id="upload-status"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section id="search" class="search-section">
+        <div class="section-container">
+            <h2 class="section-title">Semantic Search</h2>
+            <p class="section-subtitle">Find information using natural language queries</p>
+            <div class="search-container glass-card">
+                <div class="search-input-container">
+                    <input type="text" id="search-input" placeholder="Ask anything about your documents...">
+                    <button class="search-btn" id="search-btn">
+                        <i class="fas fa-search"></i>
+                    </button>
+                </div>
+                <div class="search-loading" id="search-loading" style="display: none;">
+                    <div class="spinner"></div>
+                    <p>Searching...</p>
+                </div>
+                <div class="search-results" id="search-results">
+                    <p>Search results will appear here...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- AI Summary Section -->
+    <section id="ai-summary" class="ai-summary-section">
+        <div class="section-container">
+            <h2 class="section-title">AI Summary</h2>
+            <p class="section-subtitle">Get intelligent summaries of your academic content</p>
+            <div class="summary-container glass-card">
+                <textarea id="summary-input" placeholder="Enter text or question to summarize..."></textarea>
+                <button class="btn-primary" id="summary-btn">Generate Summary</button>
+                <div class="summary-result" id="summary-result">
+                    <p>AI summary will appear here...</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about-section">
+        <div class="section-container">
+            <h2 class="section-title">About SmartCampus AI</h2>
+            <div class="about-content">
+                <div class="about-text glass-card">
+                    <h3>Revolutionizing Campus Knowledge Management</h3>
+                    <p>SmartCampus AI is a cutting-edge platform designed to transform how educational institutions manage, search, and utilize academic knowledge resources. Our system combines advanced AI technologies with intuitive design to create the ultimate smart campus experience.</p>
+                    <p>Built for students, faculty, and researchers, our platform enables seamless access to institutional knowledge through semantic search, intelligent document processing, and AI-powered insights.</p>
+                </div>
+                <div class="tech-stack glass-card">
+                    <h3>Technology Stack</h3>
+                    <div class="tech-icons">
+                        <div class="tech-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-brain"></i>
+                            <span>OpenAI API</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-vector-square"></i>
+                            <span>Vector DB</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-search"></i>
+                            <span>Semantic Search</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-robot"></i>
+                            <span>LLM Integration</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact-section">
+        <div class="section-container">
+            <h2 class="section-title">Get In Touch</h2>
+            <p class="section-subtitle">Have questions? We'd love to hear from you.</p>
+            <div class="contact-container glass-card">
+                <form id="contact-form">
+                    <div class="form-group">
+                        <input type="text" id="contact-name" placeholder="Your Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="contact-email" placeholder="Your Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="contact-message" placeholder="Your Message" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn-primary">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>SmartCampus AI</h3>
+                    <p>AI-Powered Knowledge Engine</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#features">Features</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                </div>
+                <div class="footer-tech">
+                    <h4>Built With</h4>
+                    <div class="tech-stack-small">
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                        <span>OpenAI</span>
+                        <span>Vanilla JS</span>
+                    </div>
+                </div>
+                <div class="footer-social">
+                    <h4>Connect</h4>
+                    <div class="social-icons">
+                        <a href="#"><i class="fab fa-github"></i></a>
+                        <a href="#"><i class="fab fa-linkedin"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 SmartCampus AI. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="js/script.js"></script>
+    <script>
+        // Fast navigation to login page
+        function navigateToLogin() {
+            // Add loading state
+            document.body.style.cursor = 'wait';
+            
+            // Navigate with fallback
+            window.location.href = 'login.html';
+            
+            // Fallback in case of issues
+            setTimeout(() => {
+                if (window.location.pathname !== '/login.html') {
+                    window.location.assign('login.html');
+                }
+            }, 100);
+        }
+    </script>
+</body>
+</html>
