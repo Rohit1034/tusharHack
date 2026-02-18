@@ -6,7 +6,8 @@
   "scripts": {
     "install-backend": "cd backend && npm install",
     "start": "cd backend && node server.js",
-    "dev": "cd backend && npm run dev"
+    "dev": "cd backend && npm run dev",
+    "build-config": "node build-config.js"
   },
   "engines": {
     "node": "22.22.0"

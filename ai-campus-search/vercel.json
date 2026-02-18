@@ -1,0 +1,5 @@
+{
+  "buildCommand": "npm run build-config",
+  "outputDirectory": "frontend",
+  "regions": ["iad1"]
+}
