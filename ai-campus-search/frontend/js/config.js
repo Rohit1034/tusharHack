@@ -5,12 +5,18 @@ if (window.location.hostname === 'localhost' || window.location.hostname === '12
     // Development
     API_URL = 'http://localhost:5000/api';
 } else {
-    // Production - Get from window variable or use relative path
-    API_URL = window.API_BASE_URL || `${window.location.protocol}//${window.location.hostname}:5000/api`;
-    
-    // If we have a specific Render backend URL set via script tag
-    if (window.RENDER_API_URL) {
+    // Production - Use environment variables or check window object
+    // This should be set via Vercel environment variables
+    if (typeof process !== 'undefined' && process.env.REACT_APP_API_URL) {
+        API_URL = process.env.REACT_APP_API_URL;
+    } else if (typeof process !== 'undefined' && process.env.VITE_API_URL) {
+        API_URL = process.env.VITE_API_URL;
+    } else if (window.RENDER_API_URL) {
         API_URL = window.RENDER_API_URL;
+    } else {
+        // Fallback - should be injected by Vercel
+        console.error('API URL not configured! Set REACT_APP_API_URL or VITE_API_URL in Vercel environment variables.');
+        API_URL = '/api'; // This won't work - requires env vars
     }
 }
 
